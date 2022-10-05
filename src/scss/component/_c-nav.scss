@@ -1,0 +1,136 @@
+.c-nav {
+    // padding-top: $spacer-sm;
+    // padding-bottom: $spacer-sm;
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+    font-family: $en-font;
+    font-weight: $en-font-med;
+    border-top: 2px solid $red;
+
+     .navbar-toggler {
+      box-shadow: none;
+     }
+      .navbar-nav {
+        align-items: center;
+      }
+      li+li {
+        @include media-breakpoint-up(lg) {
+        margin-left: $spacer-md;
+        }
+      }
+      .nav-link {
+        font-size: $fs7;
+        transition: all 0.3s ease-in-out;
+        color: $white;
+        @include media-breakpoint-down(lg) {
+          font-size: $fs4;
+          padding: $spacer-xs 0;
+        }
+        &:hover {
+          color: $red;
+        }
+        
+      }
+      .btn {
+        background-color: $red;
+        display: inline-block;
+        color: $white;
+        border-radius: 0;
+        transition :$transition;
+        font-weight: $en-font-med;
+        padding: $spacer-xs $spacer-lg;
+        font-size: $fs4;
+        margin-top: $spacer-md;
+        @include media-breakpoint-up(lg) {
+          margin: 0;
+         font-size: $fs7;
+         padding: $spacer-md;
+       
+        }
+        &:hover {
+          background-color: $black;
+          color: $red;
+          border-color: $black;
+        }
+      }
+
+      &.scrolled,
+      &.is-scrolled {
+         /* Frosted glass affect */
+    
+      // filter: drop-shadow(2px 4px 6px $black);
+      background-color: $white;
+      background-color: transparentize($white, 0.7);
+      -webkit-backdrop-filter: blur(6px); 
+      backdrop-filter: blur(6px);  
+      .nav-link  {
+        color: $black;
+        &:hover {
+          color: $red;
+        }
+      }
+      }
+}
+
+.navigation {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.scrolled,
+.is-scrolled {
+  .c-nav__mb__icon {
+    background-color: $black;
+    &:after, 
+    &:before {
+    background-color: $black;
+    }
+  }
+}
+.navigation {
+  .navbar-toggler {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    &.is-active {
+      .c-nav__mb__icon {
+        transform: rotate(90deg);
+        &:after {
+          width: 60%;
+        }
+        &:before {
+          width: 80%;
+        }
+      }
+      .c-nav__mb__icon,
+      .c-nav__mb__icon:before,
+      .c-nav__mb__icon:after {
+       background-color: $red;
+      transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+.c-nav__mb__icon {
+  width: $spacer-md;
+  height: 2px;
+  background-color: white;
+  display: block;
+  position: relative;
+ transition: all 0.3s ease-in-out;
+
+  &:after, 
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  &:after {
+    top: -8px;
+  }
+  &:before {
+    top: 8px;
+  }
+}

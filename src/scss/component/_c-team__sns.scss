@@ -1,0 +1,31 @@
+.c-team__sns {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    @include media-breakpoint-up(lg){
+        position: absolute;
+        left: -$spacer-lg;
+        top: 0;
+        display: block;
+    }
+   &__li {
+    a {
+        display: inline-block;
+        width: $spacer-md;
+        height: $spacer-md;
+        @include media-breakpoint-up(lg){
+            width: $spacer-lg;
+            height: $spacer-lg;
+        }
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+   }
+}

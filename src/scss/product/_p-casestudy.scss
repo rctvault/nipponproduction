@@ -1,0 +1,7 @@
+.p-casestudy {
+    display: flex;
+    &:nth-of-type(1){
+        border-top: 2px solid $red;
+    }
+
+}

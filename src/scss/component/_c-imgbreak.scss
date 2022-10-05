@@ -1,0 +1,18 @@
+.c-imgbreak {
+    height: 40vh;
+    overflow: hidden;
+    width: 100vw;
+    @include media-breakpoint-up(lg){
+        height: 70vh;
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100vw;
+        }   
+    }
+   
+}

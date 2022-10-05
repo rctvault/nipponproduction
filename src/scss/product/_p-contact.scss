@@ -1,0 +1,15 @@
+.p-contact {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        width: 100%;
+        background: url('../images/cta_bg.png') center center no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+}

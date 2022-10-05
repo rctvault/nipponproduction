@@ -1,0 +1,8 @@
+.p-network {
+    min-height: 70vh;
+    background: url('../images/map.svg') center center no-repeat;
+    background-size: cover;
+    @include media-breakpoint-up(lg){
+        background-size: contain;
+    }
+}

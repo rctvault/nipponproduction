@@ -1,0 +1,25 @@
+.c-heading {
+    font-weight: normal;
+    font-family: $ja-font;
+    font-size: $font-size-1;
+    line-height: 1.4;
+    margin-bottom: $spacer-md;
+ 
+    @include media-breakpoint-up(lg){
+        margin-bottom: $spacer-xl;
+    }
+    span {
+        color: $red;
+        display: block;
+        font-size: $font-size-6;
+        font-family: $en-font;
+        font-weight: $en-font-med;
+        margin-bottom: 0;
+    }
+    &-center {
+        text-align: center;
+    }
+    &-sm {
+        font-size: $font-size-3;
+    }
+}

@@ -1,0 +1,29 @@
+.c-logo {
+    .logo_nippon {
+        fill: $white;
+        transition: $transition;
+    }
+    .logo_bg {
+        fill: $white;
+        transition: $transition;
+    }
+    .logo_production {
+        fill: $black;
+        transition: $transition;
+    }
+    
+}
+.scrolled,
+.is-scrolled {
+    .c-logo {
+        .logo_nippon {
+            fill: $black;
+        }
+        .logo_bg {
+            fill: $red;
+        }
+        .logo_production {
+            fill: $lgray;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.c-navbar-brand {
+    padding: 10px 15px;
+    width: clamp(80px, 40%, 150px);
+    @include media-breakpoint-up(lg){
+        padding: 0 0 0 15px;
+    }
+}

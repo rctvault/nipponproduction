@@ -1,0 +1,13 @@
+.p-services {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-top: $spacer-lg;
+    @include media-breakpoint-up(lg){
+        grid-template-columns: 1fr 1fr;
+        margin-top: $spacer-xxl;
+    }
+    .c-services {
+        flex: 1;
+    }
+}

@@ -1,0 +1,31 @@
+// Colours
+
+$red : #A91B26;
+$black: #1E1D1D;
+$lgray: #F8F8F8;
+$white: #FFFFFF;
+// $white:         #FFFFFF;
+// $lgrey:         #F6F6F6;
+// $midgrey:       #BDBDBD;
+// $font:          #211F1F;
+// $black:         #171515;
+// $theme:         #23AE87;
+
+
+
+// Spacing
+$spacer-unit: 4px;
+$spacer-xxs:  $spacer-unit;
+$spacer-xs:   $spacer-unit * 2;  // 8
+$spacer-sm:   $spacer-unit * 3.5;  // 14
+$spacer-md:   $spacer-unit * 6;  // 24
+$spacer-lg:   $spacer-unit * 10;  //40
+$spacer-xl:   $spacer-unit * 15; // 60
+$spacer-xxl:  $spacer-unit * 21; // 84
+$spacer-dl:   $spacer-unit * 26; // 104
+
+// border radius
+$border-radius: 5px;
+
+// transition
+$transition: all 0.3s ease-in-out;

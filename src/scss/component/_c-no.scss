@@ -1,0 +1,53 @@
+.c-no {
+    a {
+        &:hover {
+            color: $red;
+            border-color: $red;
+        }
+    }
+    &__card {
+        padding: $spacer-md 0;
+        margin: 0 ;
+        border-top: 1px solid transparentize($black, 0.8);
+        display: flex;
+        gap: $spacer-sm;
+        will-change: color;
+        color: $black;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        @include media-breakpoint-up(lg){
+            padding: $spacer-lg 0;
+            margin: 0 $spacer-md;
+            gap: $spacer-xl;
+        }
+        &__number {
+            font-family: $en-font;
+            display: flex;
+            align-items: center;
+            p {
+                font-weight: 400;
+            }
+        }
+        
+    }
+    &__title {
+        font-family: $fs6;
+        font-weight: $ja-font-reg;
+        margin-bottom: $spacer-sm;
+        @include media-breakpoint-up(lg){
+            margin-bottom: $spacer-md;
+        }
+        span {
+            display: block;
+            font-size: $fs7;
+            font-family: $en-font;
+            margin-bottom: $spacer-xxs;
+        }
+    }
+    &__content {
+        margin-bottom: 0;
+        line-height: 1.5;
+    }
+    
+}
+

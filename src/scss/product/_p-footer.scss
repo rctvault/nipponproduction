@@ -1,0 +1,15 @@
+.p-footer {
+    background-color: $black;
+    color: $white;
+    padding: $spacer-lg 0;
+    .c-footer-copyright {
+        text-align: center;
+        opacity: 0.6;
+        text-transform: uppercase;
+        font-family: $en-font;
+        margin-top: $spacer-md;
+        font-size: $fs9;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+    }
+}

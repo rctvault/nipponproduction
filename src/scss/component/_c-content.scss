@@ -1,0 +1,16 @@
+.c-content {
+    width: 100%;
+    @include media-breakpoint-up(lg){
+    &-left {
+        opacity: 0;
+        padding-right: 15%;
+     
+    }
+    &-right  {
+        opacity: 0;
+        padding-left: 20%;
+      
+    }
+}
+
+}

@@ -1,0 +1,20 @@
+.c-card {
+position: relative;
+  width: 100%;
+    padding: $spacer-md;
+    @include media-breakpoint-up(md){
+        width: 50%;
+    }
+    &__img {
+        border-radius: $border-radius;
+    }
+    &__content {
+        &__title {
+            font-family: $ja-font;
+            font-weight: $ja-font-med;
+            margin: $spacer-sm 0;
+            font-size: $fs6;
+        }
+    }
+
+}

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- remove this on production -->
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#A91B26">
+
+    <meta name="description" content="ニッポン・プロダクションは「想い」を実現する日本特化の海外ロケ・撮影コーディネーターです">
+    <title>ニッポン・プロダクション</title>
+</head>
+<body>
+
+  <!-- Navigation MB -->
+  <aside >
+    <div  class="p-mb-nav">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="support.html">Support</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="works.html">Works</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+        <li class="nav-item">
+        <a class="nav-link" href="network.html">Network</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li>
+        <a class="btn" href="contact.html">Contact</a>
+        </li>
+    </ul>
+</div>
+</aside>
+   
+<!-- Navigation -->
+    <nav class="navigation navbar navbar-expand-lg fixed-top c-nav">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand img-link c-navbar-brand" href="index.html">
+            <svg class="c-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.55 47.07">
+                <g class="logo"><path class="logo_nippon" d="M20.37.33v23.82h-5.85L6.01 10.29v13.86H0V.33h5.81l8.55 13.86V.33h6.01ZM26.12.33h6.01v23.82h-6.01V.33ZM56.84 6.25v3.71c0 3.91-2.04 5.91-6.05 5.91h-6.85v8.28h-6.01V.33h12.86c4.01 0 6.05 2 6.05 5.91Zm-6.01.97c0-1.34-.47-1.77-1.84-1.77h-5.04v5.31h5.04c1.37 0 1.84-.47 1.84-1.77V7.22ZM80.12 6.25v3.71c0 3.91-2.04 5.91-6.05 5.91h-6.85v8.28h-6.01V.33h12.86c4.01 0 6.05 2 6.05 5.91Zm-6.01.97c0-1.34-.47-1.77-1.84-1.77h-5.04v5.31h5.04c1.37 0 1.84-.47 1.84-1.77V7.22ZM103.76 5.91v12.66c0 3.91-2.04 5.91-6.05 5.91H90.2c-4.01 0-6.05-2-6.05-5.91V5.91C84.15 2 86.19 0 90.2 0h7.51c4.01 0 6.05 2 6.05 5.91Zm-7.85-.8H92c-1.37 0-1.84.43-1.84 1.77V17.6c0 1.3.47 1.77 1.84 1.77h3.91c1.37 0 1.84-.47 1.84-1.77V6.88c0-1.34-.47-1.77-1.84-1.77ZM129.55.33v23.82h-5.85l-8.52-13.86v13.86h-6.01V.33h5.81l8.55 13.86V.33h6.01Z"/>
+                <path class="logo_bg" d="M0 29.69h129.55v17.38H0z"/><g><path class="logo_production" d="M4.49 43.04v-9.33h3.96c.43 0 .82.09 1.18.26s.67.41.94.71c.27.3.47.63.62 1a3.143 3.143 0 0 1-.15 2.63c-.24.47-.58.86-1.01 1.16-.43.3-.94.45-1.53.45H6.29v3.13H4.48Zm1.81-4.72h2.1c.22 0 .42-.06.59-.18.18-.12.32-.3.42-.53.11-.23.16-.5.16-.8 0-.32-.06-.6-.18-.83-.12-.23-.27-.4-.46-.51s-.39-.17-.61-.17H6.3v3.02ZM16.62 43.04v-9.33h4.13c.43 0 .83.09 1.19.26s.68.41.95.71c.27.3.47.63.62 1 .14.37.22.75.22 1.13s-.07.77-.2 1.14-.33.68-.58.95c-.25.27-.55.48-.89.63l2.13 3.51h-2l-1.92-3.13h-1.81v3.13h-1.81Zm1.81-4.72h2.27c.23 0 .43-.07.6-.2s.32-.32.42-.55c.11-.23.16-.48.16-.76 0-.3-.06-.56-.18-.78-.12-.22-.28-.4-.47-.53-.19-.13-.39-.2-.61-.2h-2.2v3.02ZM33.29 43.11c-.68 0-1.3-.13-1.86-.39S30.4 42.1 30 41.65c-.4-.45-.71-.96-.93-1.53s-.33-1.15-.33-1.74.12-1.22.35-1.78c.23-.56.55-1.07.96-1.51.41-.44.89-.79 1.45-1.05.56-.26 1.17-.39 1.83-.39s1.29.14 1.85.41 1.03.64 1.43 1.09c.39.46.7.96.92 1.53.22.56.33 1.14.33 1.74s-.11 1.2-.34 1.77-.55 1.07-.95 1.51c-.41.44-.89.79-1.45 1.05-.56.25-1.16.38-1.82.38Zm-2.71-4.73c0 .4.06.79.18 1.17s.3.71.53 1.01.52.53.85.7c.34.17.72.26 1.15.26s.83-.09 1.17-.27c.34-.18.63-.42.85-.72s.4-.64.52-1.01.18-.75.18-1.12a3.484 3.484 0 0 0-.73-2.16c-.23-.29-.52-.53-.85-.7-.34-.17-.72-.26-1.14-.26-.45 0-.84.09-1.18.27s-.62.42-.85.72c-.23.3-.4.63-.52 1s-.18.75-.18 1.13ZM43.19 43.04v-9.33h3.39c1.02 0 1.87.21 2.55.62.68.42 1.2.98 1.54 1.68.34.71.51 1.49.51 2.35 0 .95-.19 1.77-.56 2.47-.38.7-.91 1.24-1.6 1.63s-1.5.58-2.44.58h-3.39Zm6.17-4.68c0-.6-.11-1.14-.33-1.6s-.53-.82-.95-1.08-.91-.39-1.5-.39H45v6.15h1.58c.6 0 1.1-.13 1.51-.4s.72-.64.94-1.1c.22-.47.32-1 .32-1.58ZM60.5 43.11c-.74 0-1.38-.13-1.9-.37-.52-.25-.94-.59-1.26-1.03a4.54 4.54 0 0 1-.7-1.49c-.15-.56-.22-1.14-.22-1.74v-4.76h1.81v4.76c0 .39.04.76.11 1.12.07.36.2.69.37.98.18.29.41.52.7.68s.65.25 1.08.25.8-.09 1.1-.26c.29-.17.53-.4.7-.69s.3-.62.37-.98c.08-.36.12-.73.12-1.11v-4.76h1.8v4.76c0 .64-.08 1.24-.23 1.8-.15.56-.39 1.05-.72 1.48-.33.43-.75.76-1.27 1s-1.14.36-1.85.36ZM69.78 38.3c0-.57.1-1.13.31-1.68s.51-1.05.9-1.5c.39-.45.88-.81 1.45-1.08s1.22-.4 1.95-.4c.86 0 1.6.19 2.23.57.63.38 1.09.87 1.4 1.47l-1.39.96c-.16-.35-.36-.63-.62-.83s-.53-.35-.82-.43a3.19 3.19 0 0 0-.85-.13c-.46 0-.85.09-1.19.28-.34.18-.62.42-.85.72s-.4.63-.51 1c-.11.37-.16.74-.16 1.1 0 .41.07.81.2 1.19.13.38.32.72.56 1.01.24.29.53.53.87.7.34.17.71.26 1.11.26.29 0 .58-.05.88-.14.3-.1.57-.25.83-.46.25-.21.45-.48.59-.82l1.48.85c-.18.46-.48.86-.9 1.18s-.88.57-1.4.74c-.52.17-1.03.25-1.54.25-.67 0-1.28-.14-1.83-.41s-1.03-.64-1.43-1.1c-.4-.46-.71-.98-.93-1.55-.22-.57-.33-1.15-.33-1.74ZM90.29 35.3h-2.98v7.74h-1.8V35.3h-2.98v-1.59h7.77v1.59ZM95.39 43.04v-9.33h1.81v9.33h-1.81ZM107.07 43.11c-.68 0-1.3-.13-1.86-.39s-1.03-.62-1.43-1.07c-.4-.45-.71-.96-.93-1.53s-.33-1.15-.33-1.74.12-1.22.35-1.78c.23-.56.55-1.07.96-1.51.41-.44.89-.79 1.45-1.05.56-.26 1.17-.39 1.83-.39s1.29.14 1.85.41 1.03.64 1.43 1.09c.39.46.7.96.92 1.53.22.56.33 1.14.33 1.74s-.11 1.2-.34 1.77-.55 1.07-.95 1.51c-.41.44-.89.79-1.45 1.05-.56.25-1.16.38-1.82.38Zm-2.71-4.73c0 .4.06.79.18 1.17s.3.71.53 1.01.52.53.85.7c.34.17.72.26 1.15.26s.83-.09 1.17-.27c.34-.18.63-.42.85-.72s.4-.64.52-1.01.18-.75.18-1.12a3.484 3.484 0 0 0-.73-2.16c-.23-.29-.52-.53-.85-.7-.34-.17-.72-.26-1.14-.26-.45 0-.84.09-1.18.27s-.62.42-.85.72c-.23.3-.4.63-.52 1s-.18.75-.18 1.13ZM118.79 37.05v5.99h-1.81v-9.33h1.45l4.82 6.15v-6.14h1.81v9.32h-1.51l-4.76-5.99Z"/></g></g></svg>
+           
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="c-nav__mb__icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="support.html">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="works.html">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="network.html">Network</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li>
+                <a class="btn" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+    </nav>
+    <div>
+    
+        <!-- /// Content Start-->
+        <!-- page title -->
+       <div class="p-page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="p-page-title__header">Services</h1>
+                </div>
+            </div>
+        </div>
+        <div class="p-page-title__bg">
+            <img src="images/cover-services.png" alt="Services">
+        </div>
+       
+       </div>
+
+        <main>
+        
+        <!-- main content -->
+        <!-- introduction-->
+        <section class="p-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 mx-auto ">
+                            <div class="c-content">
+                            <div class="c-content-left">
+                                <h2 class="c-heading c-heading-sm">現地リサーチやロケハン、撮影手配、機材レンタルからインタビューまで、海外での撮影コーディネートならニッポンプロダクションにお任せください。</h2>
+                            </div>
+                            <div class="c-content-right">
+                            <p>ネットフリックス（Netflix）やタイム（Time）、NHKなど、数々の企業に撮影コーディネートを手掛けてきた弊社は、2018年より「新たな試み」として日本へ軸足を移すことになりました。弊社は日本文化を理解し、日本へ熱い想いを持ったスタッフの集まりです。海外でも日本の皆様が安心できるサービスをお届けできるよう、これまでの豊富な経験と実績を活かし「迅速・柔軟・革新的」な対応であらゆる撮影をトータルサポートいたします。</p>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+               
+        </section>
+
+        <section class="p-section p-section-lgray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 mx-auto">
+
+                        <!-- service detail  -->
+                        <div id="s-research" class="c-services-detail js-in">
+                            <div class="c-services-detail__img">
+                                <img class="img-fluid" src="images/services-research.png" alt="リサーチ">
+                            </div>
+                            <div class="c-services-detail__content">
+                             
+                                    <h3 class="c-services-detail__content__title"><span>Reseach</span>リサーチ</h3>
+                                    <p class="p-lh-sm">豊富な経験と実績をもとに、クライアントのニーズに配慮したリサーチを行います。現地と日本、両国を理解したプロの現地スタッフだからこそ迅速かつ的確なリサーチが可能です。信頼性を重視し、日本でリサーチした情報をスタッフが現地でさらに事実確認する「情報検証」を行い、ニュースソースも必ず明記してお知らせします。</p>
+                                    
+                                    <ul class="c-list mt-4">
+                                        <li>撮影許可の取得</li>
+                                        <li>取材やインタビューのアポイント、交渉</li>
+                                        <li>新聞および雑誌のためのリサーチ</li>
+                                        <li>空撮許可の取得</li>
+                                        <li>現地アーカイブからの記事と画像の取得など</li>
+                                    </ul>
+
+                             
+
+                            </div>
+                        </div>
+
+                         <!-- service detail  -->
+                        <div id="s-casting" class="c-services-detail c-services-detail-rv js-in">
+                            <div class="c-services-detail__content">
+                                <h3 class="c-services-detail__content__title"><span>Local Crew & Casting</span>現地スタッフの手配</h3>
+                                <p class="p-lh-sm">通訳者または現地コーディネーター、運転手、現地技術スタッフなど、お客様のご要望に応じて現地スタッフの手配を行います。通訳は10カ国語以上で手配が可能。幅広い職種でスタッフの手配が可能ですので、詳細などはお気軽にお問い合わせください。</p>
+                                    
+                                <ul class="c-list mt-4">
+                                    <li>現地の制作スタッフ</li>
+                                    <li>現地カメラマン</li>
+                                    <li>翻訳者、通訳者</li>
+                                    <li>イベント主催者</li>
+                                    <li>俳優、モデル</li>
+                                </ul>
+                            </div>
+                            <div class="c-services-detail__img">
+                                <img class="img-fluid" src="images/services-local.png" alt="現地スタッフの手配">
+                            </div>
+                        </div>
+
+                         <!-- service detail  -->
+                         <div id="s-overseas" class="c-services-detail js-in">
+                            <div class="c-services-detail__img">
+                                <img class="img-fluid" src="images/services-overseas.png" alt="__">
+                            </div>
+                            <div class="c-services-detail__content">
+                             
+                                    <h3 class="c-services-detail__content__title"><span>Overseas Filming Support</span>海外取材のサポート</h3>
+                                    <p class="p-lh-sm">海外での取材は、言語や文化、習慣の違いなどでトラブルが生じることもございます。ニッポン・プロダクションでは海外取材でもすれ違いや誤解が起きぬよう、現地に精通しているスタッフを手配し、スムーズなやり取りができるよう努めています。</p>
+                                    
+                                    <ul class="c-list mt-4">
+                                        <li>映画制作</li>
+                                        <li>CM制作</li>
+                                        <li>テレビ番組制作</li>
+                                        <li>ドキュメンタリー制作</li>
+                                        <li>ニュース制作</li>
+                                    </ul>
+
+                             
+
+                            </div>
+                        </div>
+
+                         <!-- service detail  -->
+                        <div id="s-coord" class="c-services-detail c-services-detail-rv js-in">
+                            <div class="c-services-detail__content">
+                                <h3 class="c-services-detail__content__title"><span>Filming  Coordination</span>撮影コーディネート</h3>
+                                <p class="p-lh-sm">日本に特化したトータル撮影コーディネートで、クライアントの小さな想いや悩みを汲み取ったきめ細やかなサービスに尽力しています。リサーチから編集段階まで継続的なサポートを実施し、海外でも日本にいるかのような安心感を持っていただけるよう円滑なサービスの提供に努めています。</p>
+                                    
+                                <ul class="c-list mt-4">
+                                    <li>動画撮影</li>
+                                    <li>映画撮影</li>
+                                    <li>照明管理</li>
+                                    <li>サウンド管理</li>
+                                    <li>編集</li>
+                                </ul>
+                            </div>
+                            <div class="c-services-detail__img">
+                                <img class="img-fluid" src="images/services-coord.png" alt="撮影コーディネート">
+                            </div>
+                        </div>
+
+                          <!-- service detail  -->
+                          <div id="s-scout" class="c-services-detail js-in">
+                            <div class="c-services-detail__img">
+                                <img class="img-fluid" src="images/services-scout.png" alt="ロケハン">
+                            </div>
+                            <div class="c-services-detail__content">
+                             
+                                    <h3 class="c-services-detail__content__title"><span>Location Scouting</span>ロケハン</h3>
+                                    <p class="p-lh-sm">ニッポン・プロダクションでは、ロケハンは弊社のスタッフのみで行い、写真や画像で毎日ロケハンの報告を行うことが可能です。10カ国以上に及ぶ強力なネットワークがあるため、ロケハンも撮影も安心して弊社にお任せいただけます。</p>
+                                    
+                                    <ul class="c-list mt-4">
+                                        <li>ロケハン（場所／人）</li>
+                                        <li>ロケーション管理</li>
+                                        <li>撮影許可の取得</li>
+                                        <li>交渉</li>
+                                    </ul>
+
+                             
+
+                            </div>
+                        </div>
+
+                         <!-- service detail  -->
+                        <div id="s-gear" class="c-services-detail c-services-detail-rv js-in">
+                            <div class="c-services-detail__content">
+                                <h3 class="c-services-detail__content__title"><span>Gear Rental</span>機材レンタル</h3>
+                                <p class="p-lh-sm">アミラ（AMIRA）のカメラ（4K）、カメラレンズ、グリップ機材、クレーンなど、ニッポン・プロダクションなら機材レンタルを種類豊富にご用意しています。「この機材はレンタル可能か」など、より詳しい情報をお求めの方は、お気軽にご相談ください</p>
+                                    
+                                <ul class="c-list mt-4">
+                                    <li>カメラやレンズなどの機材レンタル</li>
+                                    <li>照明機材レンタル</li>
+                                    <li>ドローンやクレーンなどの特殊記載レンタル</li>
+                                    <li>車やロケ機材車などのレンタ</li>
+                                    <li>衣装、大道具、小道具のレンタル</li>
+                                </ul>
+                            </div>
+                            <div class="c-services-detail__img">
+                                <img class="img-fluid" src="images/services-rental.png" alt="機材レンタル">
+                            </div>
+                        </div>
+
+                          <!-- service detail  -->
+                          <div id="s-mag" class="c-services-detail js-in">
+                            <div class="c-services-detail__img">
+                                <img class="img-fluid" src="images/services-mag.png" alt="__">
+                            </div>
+                            <div class="c-services-detail__content">
+                             
+                                    <h3 class="c-services-detail__content__title"><span>Newspapers & Magazines</span>新聞・雑誌</h3>
+                                    <p class="p-lh-sm">映像制作以外にも、新聞や雑誌、広告などのサポートもニッポン・プロダクションにお任せください。これまで弊社では記事に関する様々な依頼を受けてきた実績があります。取材における現地コーディネートやインタビューのアレンジなど、広範囲にわたりサポートいたします。</p>
+                                    
+                                    <ul class="c-list mt-4">
+                                        <li>___</li>
+                                        <li>___</li>
+                                        <li>___</li>
+                                        <li>___</li>
+                                        <li>___</li>
+                                    </ul>
+
+                             
+
+                            </div>
+                        </div>
+
+                         <!-- service detail  --> 
+                        <div id="s-tv" class="c-services-detail c-services-detail-rv js-in">
+                            <div class="c-services-detail__content">
+                                <h3 class="c-services-detail__content__title"><span>Documentaries</span>ドキュメンタリー制作</h3>
+                                <p class="p-lh-sm">ニッポン・プロダクションでは、台本のないドキュメンタリー映画や番組制作においても、数々の現地コーディネートを手掛けてきました。エンターテイメントの分野だけでなく、社会問題や世界情勢まで、多様なトピックに対応してきた実績があります。</p>
+                                    
+                                <ul class="c-list mt-4">
+                                    <li>___</li>
+                                    <li>___</li>
+                                    <li>___</li>
+                                    <li>___</li>
+                                    <li>___</li>
+                                </ul>
+                            </div>
+                            <div class="c-services-detail__img">
+                                <img class="img-fluid" src="images/services-doc.png" alt="___">
+                            </div>
+                        </div>
+
+                          <!-- service detail  -->
+                          <div class="c-services-detail js-in">
+                            <div class="c-services-detail__img">
+                                <img class="img-fluid" src="images/services-tv.png" alt="__">
+                            </div>
+                            <div class="c-services-detail__content">
+                             
+                                    <h3 class="c-services-detail__content__title"><span>TV Commercials</span>TVコマーシャル制作</h3>
+                                    <p class="p-lh-sm">TVコマーシャル制作をお考えの方は、実績と経験のあるニッポン・プロダクションへぜひ一度ご相談ください。現地の通訳・技術スタッフ以外にも、現地モデルおよび俳優の手配も可能！機材レンタルまで対応しているので、現地で困ることなくスムーズに撮影が実施できます。</p>
+                                    
+                                    <ul class="c-list mt-4">
+                                        <li>___</li>
+                                        <li>___</li>
+                                        <li>___</li>
+                                        <li>___</li>
+                                        <li>___</li>
+                                    </ul>
+
+                             
+
+                            </div>
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+     
+
+
+        <!-- /// Content End-->
+
+         <!-- Contact -->
+         <section class="p-section p-section-sm p-section-red p-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <div class="c-contact">
+                            <h2 class="c-contact__title">Get in Touch</h2>
+                            <p class="text-center">どんなに小さな悩みや不安もお気軽にご相談ください。ニッポン・プロダクションは、どんなことでもお客様に寄り添い、常に最大限のサポートができるよう尽力しています。</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 col-lg-10 mx-auto">
+                        <div class="c-cta-form">
+                            <form class="row g-4" action="">
+                                <div class="col-md-6">
+
+                                    <div class="c-formItem">
+                                        <label for="last_name" class="c-formItem__label">
+                                            <span class="c-formItem__label__name">お名前（姓） <span class="required">*</span></span>
+                                        </label>
+                                        <input type="text" class="c-formItem__field" id="last_name" autocomplete="off" placeholder="山田" />
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="c-formItem">
+                                        <label for="first_name" class="c-formItem__label">
+                                            <span class="c-formItem__label__name">お名前（名） <span class="required">*</span></span>
+                                        </label>
+                                        <input type="text" class="c-formItem__field" id="first_name" autocomplete="off" placeholder="太郎" />
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                <div class="c-formItem">
+                                    <label for="your_tel" class="c-formItem__label">
+                                        <span class="c-formItem__label__name">電話番号</span>
+                                    </label>
+                                    <input type="text" class="c-formItem__field"  id="your_tel" autocomplete="off" placeholder="01-1111-2222" />
+                                    
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="c-formItem">
+                                    <label for="your_email" class="c-formItem__label">
+                                        <span class="c-formItem__label__name">メールアドレス <span class="required">*</span></span>
+                                    </label>
+                                    <input type="email" class="c-formItem__field" id="your_email" autocomplete="off" placeholder="info@nipponproductions.com" />
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-12">
+
+                                <div class="c-formItem c-formItem-fw mt-4">
+                                    <label for="your_enquiry" class="c-formItem__label">
+                                        <span class="c-formItem__label__name">お問い合わせ内容 <span class="required">*</span></span>
+                                    </label>
+                                    <textarea class="c-formItem__field" id="your_enquiry" autocomplete="off" placeholder="お問い合わせ内容"></textarea>
+                                   
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-check text-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="privacy" checked>
+                                    <label class="form-check-label" for="privacy">
+                                        個人情報の取り扱いに同意します。
+                                    </label>
+                                  </div>
+
+                                  <p class="mb-0 text-center">
+                                    <a href="" class="c-btn c-btn-black">
+                                        <span>送信する</span>
+                                    </a>
+                                </p> 
+                            </div>
+                           
+                                 
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+         <!-- Footer -->
+         <div class="p-footer">
+            <div class="container-fluid p-0">
+                 <div class="c-footer-bar">
+                    <div class="c-footer-bar__logo">
+                        <a href="index.html">
+                            <img class="img-fluid" src="images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="c-footer-bar__nav">
+                        <ul class="c-footer-nav">
+                            <li>
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="support.html">Support</a>
+                            </li>
+                            <li>
+                                <a href="works.html">Works</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="network.html">Network</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="c-footer-copyright">@2022 Nippon Production</p>
+            </div>
+         </div>
+
+         
+
+
+
+        </main>
+
+    </div>
+   
+</body>
+<script src="js/vendor.js"></script>
+<script src="js/scripts.min.js"></script>
+</html>

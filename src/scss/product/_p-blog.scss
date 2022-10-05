@@ -1,0 +1,18 @@
+.p-blog {
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: $spacer-md;
+    align-items: flex-start;
+    @include media-breakpoint-up(lg){
+        gap: 0;
+    }
+    .c-blog {
+        margin-bottom: $spacer-md;
+        @include media-breakpoint-up(lg){
+        width: 28%;
+        margin-bottom: $spacer-xxl;
+        }
+    
+    }
+}

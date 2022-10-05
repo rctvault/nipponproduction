@@ -1,0 +1,26 @@
+.p-section {
+    padding: $spacer-lg 0;
+    @include media-breakpoint-up(lg){
+        padding: $spacer-dl 0;
+    }
+    &-lgray {
+        background-color: $lgray;
+    }
+    &-black {
+        background-color: $black;
+        color: $white;
+    }
+    &-red {
+        background: linear-gradient(45deg, #BF1F2B, #9C0E19);
+        color: $white;
+    }
+    &-sm {
+        padding: $spacer-lg 0;
+    }
+    &-2x {
+        padding-top: calc(#{$spacer-xxl}*2);
+        @include media-breakpoint-up(lg){
+        padding-top: calc(#{$spacer-dl}*2);
+        }
+    }
+}

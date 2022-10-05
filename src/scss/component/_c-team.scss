@@ -1,0 +1,46 @@
+.c-team {
+    margin: $spacer-sm ;
+    width: 40%;
+    position: relative;
+    flex-shrink: 0;
+    @include media-breakpoint-up(lg){
+        margin: $spacer-sm $spacer-md;
+        width: 25%; 
+        margin: $spacer-md $spacer-lg;
+    }
+    button {
+        all: unset;
+        &:hover {
+            .c-team__img img {
+                transform: scale(1);
+            }
+        }
+    }
+    &__img {
+        border-radius: $border-radius;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0)
+        img {
+            transform: scale(1.05);
+            will-change: transform;
+            transition: transform 0.5s ease-in-out;
+            
+        }
+    }
+    &__content {
+        p {
+            font-size: $fs6;
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+    }
+    @include media-breakpoint-down(lg){
+    .c-team__sns {
+        display: none;
+    }
+}
+
+}

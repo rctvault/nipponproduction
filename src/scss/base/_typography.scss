@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+$en-font-light: 300;
+$en-font-med: 600;
+$en-font-bold: 700;
+
+$ja-font-reg: 400;
+$ja-font-med: 500;
+$ja-font-bold: 700;
+
+$en-font: 'Mulish', sans-serif;
+$en-font-style: italic;
+$ja-font: 'Noto Sans JP', sans-serif;
+
+// $fs1: 3.833rem; //69px
+$fs1: clamp(2.75rem, 1.4479rem + 4.1667vw, 4.3125rem);
+// $fs2: 3.056rem;//55px
+$fs2: clamp(1.953rem, 0.7153rem + 1.6368vw, 2.441rem);
+$fs3: clamp(1.75rem, 0.9167rem + 2.6667vw, 2.75rem);
+// $fs3: 2.444rem;//44px
+// $fs4: 1.944rem; //35px
+$fs4: clamp(1.375rem, 0.6979rem + 2.1667vw, 2.1875rem);
+// $fs5: 1.556rem; //28px
+$fs5: clamp(1.25rem, 0.8333rem + 1.3333vw, 1.75rem);
+$fs6: 1.278rem; //22px
+$fs7a: 20px; // 
+// $fs7: 1rem; // 18px
+$fs7: clamp(1.0625rem, 1.0104rem + 0.1667vw, 1.125rem);
+$fs8: 16px; //16px
+$fs9: 0.778rem; //14px
+
+$font-size-1:  clamp(1.75rem, 0.9167rem + 2.6667vw, 2.75rem);
+$font-size-2:  clamp(1.953rem, 0.7153rem + 1.6368vw, 2.441rem);
+$font-size-3:  clamp(1.563rem, 0.7153rem + 1.6368vw, 1.953rem);
+$font-size-4:  clamp(1.25rem, 0.7153rem + 1.6368vw, 1.563rem);
+$font-size-5: clamp(1.25rem, 0.7153rem + 1.6368vw, 1.278rem);
+$font-size-6: 1rem; // 18px
+$font-size-7: 0.8rem;
+$font-size-8: 0.64rem;
+
+
+
+body {
+    font-family: $ja-font;
+    font-style: normal;
+    font-size: $fs7;
+    color: $black;
+     p {
+        line-height: 1.7;
+      
+        &.p-lh-sm {
+         line-height: 1.7;
+        }
+        &.p-md {
+         font-size: 90%;
+         line-height: 1.5;
+        }
+        &.p-sm {
+         font-size: 75%;
+         line-height: 1.2;
+        }
+     }
+}
+
+
+
+

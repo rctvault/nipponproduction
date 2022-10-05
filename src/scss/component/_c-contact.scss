@@ -1,0 +1,9 @@
+.c-contact {
+    &__title {
+        font-family: $en-font;
+        font-size: $font-size-1;
+        line-height: 1.4;
+        margin-bottom: $spacer-md;
+        text-align: center;
+    }
+}

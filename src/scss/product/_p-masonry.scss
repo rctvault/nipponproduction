@@ -1,0 +1,13 @@
+.p-masonry {
+    display: flex;
+    flex-wrap: wrap;
+    @include media-breakpoint-up(md){
+    column-count: 2;
+   
+    .msn {
+      
+        transform: translateY(#{$spacer-xl});
+    }
+}
+   
+}

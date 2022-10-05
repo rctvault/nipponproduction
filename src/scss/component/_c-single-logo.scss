@@ -1,0 +1,16 @@
+.c-single-logo {
+    display: block;
+    max-width: 260px;
+    transition: $transition;
+    margin-bottom: $spacer-md;
+    transform: scale(0.95);
+    will-change: transform;
+    img {
+       object-fit: contain;
+       height: 100%;
+       width: 100%;
+    }
+    &:hover {
+        transform: scale(1);
+    }
+}

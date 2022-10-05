@@ -1,0 +1,17 @@
+.p-backtext {
+    position: relative;
+    .p-backtext__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.3;
+        @include media-breakpoint-up(lg){
+            width: 30%;
+            opacity: 1;
+        }
+        
+    }
+}
+

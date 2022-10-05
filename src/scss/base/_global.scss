@@ -1,0 +1,91 @@
+html, body {width: auto!important; overflow-x: hidden!important} 
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100vw;
+}
+.c-content-right,
+.c-contentleft,
+.js-st-c,
+.p-page-title__header,
+.p-page-title__bg,
+.c-heading,
+.js-in {
+    visibility:  hidden;
+}
+.is-red {
+    color: $red;
+}
+.is-fixed {
+    position: fixed;
+    width: 100vw;
+}
+.is-i {
+    visibility:  hidden;
+}
+
+.is-flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.is-faded {
+    opacity: 0.5;
+    will-change: opacity;
+    img {
+        opacity: 0.5;
+        will-change: opacity;
+    }
+}
+a {
+    transition: all 0.5s ease-in-out;
+    img {
+        transition: all 0.5s ease-in-out;  
+    }
+}
+a:hover  {
+    &.is-faded,
+    .is-faded {
+        
+        opacity: 1; 
+        img {
+            opacity: 1; 
+        }
+    }
+    &.is-mono,
+    .is-mono {
+     
+        filter: grayscale(0);
+        img {
+            filter: grayscale(0);
+        }
+    }
+}
+
+.is-error {
+    color: $red;
+    font-size: $fs9;
+}
+
+.is-mono {
+    filter: grayscale(100%);
+    will-change: filter;
+   
+    img {
+        filter: grayscale(100%);
+        will-change: filter;
+        
+    }
+}
+
+.is-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ 
+.is-textarea-lg {
+    height: calc(#{$spacer-dl}*2);
+}

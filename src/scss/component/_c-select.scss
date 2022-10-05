@@ -1,0 +1,15 @@
+.c-select {
+    border: 1px solid $black;
+    border-radius: $border-radius;
+    background-color: transparent;
+    padding: $spacer-xs $spacer-sm;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   &::-webkit-calendar-picker-indicator {
+        opacity: 100;
+        position: relative;
+        bottom: 4px;
+     }
+}

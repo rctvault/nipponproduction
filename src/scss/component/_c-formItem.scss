@@ -1,0 +1,38 @@
+.c-formItem {
+  padding: 0 $spacer-sm;
+  display: flex;
+  flex-direction: column;
+  &__label {
+    font-size: $fs8;
+  }
+  &__field {
+    transition: border-color 0.3s ease-in-out;
+    padding-bottom: $spacer-xs;
+    font-size: $fs8;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    border-bottom: 1px solid transparentize($black, 0.5);
+    padding: $spacer-xs;
+    will-change: border-color;
+   
+  }
+  textarea {
+    margin-top: $spacer-xs;
+    border: 1px solid transparentize($black, 0.5);
+    border-radius: $border-radius;
+  }
+  .c-formItem__field:focus {
+    border-color: $black;
+  }
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder  {
+    transition: $transition;
+  }
+  input:focus::-webkit-input-placeholder,
+  textarea:focus::-webkit-input-placeholder {
+    padding-left: 30px;
+    opacity: 0;
+  }
+}

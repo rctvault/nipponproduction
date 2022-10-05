@@ -1,0 +1,29 @@
+.p-blog-head {
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__date p {
+            margin: 0;
+            display: inline;
+            font-size: $fs7;
+            font-family: $en-font;
+        }
+       
+    }
+    &__img {
+        height: 250px;
+        width: 100%;
+        @include media-breakpoint-up(lg){
+            height: 450px;
+        }
+        img {
+            border-radius: $border-radius;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            object-position: center center;
+           
+        }
+    }
+}

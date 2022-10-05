@@ -1,0 +1,37 @@
+.c-modal {
+    background-color: transparentize($black, 0.3);
+    &__img {
+        border-radius: $border-radius;
+    }
+    .modal-dialog {
+        .modal-content {
+            padding: $spacer-sm;
+            border-radius: 0;
+            border-top: 2px solid $red;
+            position: relative;
+            @include media-breakpoint-up(lg){
+                padding: $spacer-lg;
+            }
+            
+            .modal-header {
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: none;
+                button {
+                    all: unset;
+                    height: $spacer-lg;
+                    width: $spacer-lg;
+                    filter: grayscale(100%);
+                    will-change: filter;
+                    transition: $transition;
+                  z-index: 999;
+                    &:hover {
+                        cursor: pointer;
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    }
+}

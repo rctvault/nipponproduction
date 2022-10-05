@@ -1,0 +1,64 @@
+.c-btn {
+    margin-top: $spacer-md;
+    border: 1px solid $red;
+    border-radius: $border-radius;
+    background-color: transparent;
+    padding: $spacer-xs $spacer-md $spacer-xs $spacer-md;
+    text-decoration: none;
+    display: inline-block;
+    will-change: gap, border-color, background-color;
+    transition: $transition;
+    @include media-breakpoint-up(lg){
+        margin-top: $spacer-lg;
+    }
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $spacer-md;
+        color: $red;
+        will-change: color;
+        transition: $transition;
+    }
+    .arrow {
+        fill: $red;
+        height: 20px;
+        transition: $transition;
+        will-change: fill;
+    }
+    &:hover {
+        background-color: $red;
+        span {
+            color: white;
+        }.arrow {
+            fill: white;
+        }
+    }
+    &-black {
+        background-color: $black;
+        border-color: $black; 
+        .arrow {
+            fill:white;
+        }
+        span {
+            color: $white;
+        }
+        &:hover {
+            background-color: transparent;
+           .arrow {
+            fill: $black;
+           }
+            span {
+                color: $black;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg){
+.c-btn-set {
+    a + a {
+        margin-left: $spacer-sm;
+    }
+}
+}

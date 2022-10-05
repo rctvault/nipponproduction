@@ -1,0 +1,41 @@
+.c-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    list-style-type: none;
+    li {
+        padding-left: 3em;
+        margin-bottom: $spacer-xs;
+        position: relative;
+        &:after {
+            content: '';
+            height: 12px;
+            width: 12px;
+            border-radius: 3px;
+            background-color: $red;
+            position: absolute;
+            left: $spacer-md;
+            top: 9px;
+        }
+    }
+    &-simple {
+        li {
+            padding: 0;
+            margin-bottom: $spacer-xxs;
+            &:after {
+                display: none;
+            }
+        }
+       
+
+    }
+    &-clean {
+    list-style-type: none;
+    li {
+        padding: 0;
+        &:after {
+            display: none;
+        }
+    }
+    }
+}
