@@ -21,6 +21,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^3.0.0",
+    "i18n-iso-countries": "^7.5.0",
     "jquery": "^3.6.0",
     "locomotive-scroll": "^4.1.4",
     "slick-carousel": "^1.8.1"

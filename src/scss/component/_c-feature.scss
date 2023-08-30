@@ -4,6 +4,10 @@
     padding: $spacer-sm;
     @include media-breakpoint-up(lg){
         padding: $spacer-md;
+        width: calc(100%/2);
+    }
+    @include media-breakpoint-up(xl){
+        padding: $spacer-md;
         width: calc(100%/3);
     }
     &__title {
@@ -41,13 +45,14 @@
     }
     &-stacked {
         .c-feature__header {
-            font-size: $fs4;
+            // font-size: $fs5;
+            font-size: $fs6;
             font-weight: $ja-font-reg;
         span {
            font-weight: $en-font-light;
            font-family: $en-font;
             display: block;
-            font-size: $fs8;
+            font-size: $fs9;
         }
         }
     }

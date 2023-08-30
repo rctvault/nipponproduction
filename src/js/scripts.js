@@ -1,14 +1,19 @@
 
 const navIcon = document.querySelector('.navbar-toggler');
-const navigation = document.querySelector('aside');
+const mbNav = document.querySelector('aside');
+const navigation = document.querySelector('nav');
 const body = document.querySelector('body');
-const kv = document.querySelector('.p-kv');
+
 
 function initMbMobile(){
-navIcon.addEventListener('click', function() {
+  const html = document.querySelector('html');
+  navIcon.addEventListener('click', function() {
     this.classList.toggle('is-active'); 
+    mbNav.classList.toggle('is-active');
     navigation.classList.toggle('is-active');
+    html.classList.toggle('no-scrolling');
   });
+
 }
 
 function addNavClass(){
@@ -16,131 +21,13 @@ function addNavClass(){
     var scroll = $(window).scrollTop();
 
     if (scroll >= 100) {
-        $(".navigation").addClass("scrolled");
+      navigation.classList.add("scrolled");
     } else {
-        $(".navigation").removeClass("scrolled");
+      navigation.classList.remove("scrolled");
     }
 });
      
 }
-
-function logoSlider(){
-  $('.p-bank-slider').slick({
-    arrows: false,
-    autoplay: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    speed: 6000,
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          infinite: true,
-        
-        }
-      },
-     
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-       
-        
-
-        }
-      }
-    
-    ]
-  });
-
-}
-function projectSlider(){
-  $('.c-worksSlider').slick({
-    arrows: false,
-    autoplay: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    draggable: true,
-    fade: true,
-    dots: true,
-    cssEase: 'linear',
-  })
-}
-
-function voiceSlider(){
-  $('.c-voiceSlider').slick({
-    arrows: true,
-    autoplay: false,
-    speed: 400,
-    dots: false,
-    draggable: true,
-    cssEase: 'linear',
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-     
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false
-
-        }
-      }
-    
-    ]
-  })
-  
-}
-
-function CheckListed( txtSearch ) {
-  var objList = document.getElementById("dataListNetworkCountries");
-
-
-
-  for (var i = 0; i < objList.options.length; i++) {
-   
-   if ( objList.options[i].value.trim().toUpperCase() == txtSearch.trim().toUpperCase() ) {
-   var networkUrl = objList.options[i].dataset.url;
-
-     $('#learnMore').attr("href", `network/`+ networkUrl )
-      $('.is-covered').show();
-      $('.is-not-covered').hide();
-      $('.js-networktext').hide();
-      return true ;
-    }
-   }
-
-   $('.is-not-covered').show();
-   $('.is-covered').hide();
-   $('.js-networktext').hide();
-
-   if (  txtSearch.trim().length == 0 ) {
-     $('.is-covered').hide();
-    $('.is-not-covered').hide();
-    $('.js-networktext').show();
-  }
-
-     return false ; // text does not matched ;
-     
- }
 
 
  function animatePageTitle(){
@@ -179,12 +66,12 @@ function CheckListed( txtSearch ) {
       ease: "power1.inOut",
     },{
       autoAlpha: 1,
-      duration: 1,
+    
       yPercent: 0,
       scrollTrigger: {
         trigger: item,
         start: 'top 80%', 
-        toggleActions: "play none none reverse ",  
+       
      
     }
     });
@@ -206,7 +93,7 @@ function CheckListed( txtSearch ) {
       scrollTrigger: {
         trigger: itemContainer,
         start: 'top 80%', 
-        toggleActions: "play none none reverse ",  
+         
      
     }
     });
@@ -252,12 +139,11 @@ function CheckListed( txtSearch ) {
         ease: "power1.inOut",
       },{
         autoAlpha: 1,
-        duration: 1,
         yPercent: 0,
         scrollTrigger: {
           trigger: itemrowItem,
           start: 'top 80%', 
-          toggleActions: "play none none reverse ",  
+         
        
       }
       })
@@ -275,7 +161,7 @@ function CheckListed( txtSearch ) {
         scrollTrigger: {
           trigger: imgBreakMain,
           start: 'bottom bottom', 
-          toggleActions: "play none none reverse ",  
+        
           scrub: true,
        //   markers: {startColor: "orange", endColor: "blue", fontSize: "18px", fontWeight: "bold", indent: 20}
       }
@@ -308,48 +194,10 @@ function navAnim(){
 });
 }
 
-function initKv(){
-  var tl = gsap.timeline({
-    ease: "power1.in",
-    duration: 1
-  });
-
-  tl
-  .to(".p-kv__img", {
-  autoAlpha: 1
-}, '-=0.5')
-  .fromTo(".p-kv__lead", {
-    autoAlpha: 0,
-    y: '20'
-}, {
-  autoAlpha: 1,
-  y: 0
-})
-
-.to(".p-logo-bank", {
-    autoAlpha: 1
-}, '+=0.2'); 
-
-}
-
 
 $(document).ready(function(){
- if (kv) {
-    initKv();
-
-    $('.is-covered').hide();
-    $('.is-not-covered').hide();
-
-  }
-
   addNavClass();
-  logoSlider();
-  projectSlider();
-  voiceSlider();
   initMbMobile();
- 
   navAnim();
   animatePageTitle();
-  
-
 });

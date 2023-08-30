@@ -3,28 +3,30 @@
     margin: 0;
     padding: 0;
     display: flex;
-    @include media-breakpoint-up(lg){
+    justify-content: center;
+   
         position: absolute;
-        left: -$spacer-lg;
-        top: 0;
+        left: 4px ;
+        top: calc(#{$spacer-xs} * 3) ;
         display: block;
-    }
+   
    &__li {
     a {
+        background-color: #0077b5;
         display: inline-block;
-        width: $spacer-md;
-        height: $spacer-md;
-        @include media-breakpoint-up(lg){
-            width: $spacer-lg;
-            height: $spacer-lg;
-        }
+        width: $spacer-lg;
+        height: $spacer-lg;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(0px);
+     
         img {
             object-fit: cover;
             height: 100%;
             width: 100%;
+            display: block;
         }
         &:hover {
-            opacity: 1;
+            transform: translateX(10px);
         }
     }
    }

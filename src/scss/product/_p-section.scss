@@ -24,3 +24,19 @@
         }
     }
 }
+
+.p-section-black {
+    .c-btn {
+        border-color: white;
+        color: white;
+        span {
+            color: white;
+        }
+        .arrow {
+            fill: white;
+        }
+        &:hover {
+            border-color: $red;
+        }
+    }
+}

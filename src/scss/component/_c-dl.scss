@@ -1,11 +1,15 @@
 .c-dl {
+    dt {
+      
+        font-size: 80%;
+    }
     h3 {
         font-weight: $ja-font-med;
-        font-size: $fs5;
+        font-size: $fs6;
         margin-top: $spacer-lg;
     }
     h5 {
-        font-size: $fs6;
+        font-size: $fs7;
         margin-top: $spacer-md;
     }
 }

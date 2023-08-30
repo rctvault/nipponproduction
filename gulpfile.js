@@ -32,9 +32,9 @@ gulp.task("sass", function(done){
 	gulp.task('vendor', function(done) {
 				return(
 			gulp.src([
-			'./node_modules/bootstrap/dist/js/bootstrap.js',
+			// './node_modules/bootstrap/dist/js/bootstrap.js',
       './node_modules/jquery/dist/jquery.min.js',
-      './node_modules/slick-carousel/slick/slick.min.js',
+      // './node_modules/slick-carousel/slick/slick.min.js',
       './node_modules/gsap/dist/gsap.min.js',
       './node_modules/gsap/dist/ScrollTrigger.min.js',
 			])

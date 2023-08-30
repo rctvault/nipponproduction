@@ -1,7 +1,7 @@
 .p-blog-content {
     padding:  0;
     @include media-breakpoint-up(lg){
-        padding: $spacer-md $spacer-lg $spacer-xxl $spacer-lg ;
+        padding: $spacer-md 0 $spacer-xxl 0;
     }
     h1, h2, h3, h4, h5 { margin-bottom: $spacer-sm;}
     h1:first-child,

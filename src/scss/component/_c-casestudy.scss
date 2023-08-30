@@ -36,15 +36,16 @@
         border-radius: $border-radius;
         margin-bottom: $spacer-sm;
         overflow: hidden;
+        height: 250px;
         -webkit-mask-image: -webkit-radial-gradient(white, black);        
         img {
             transform: scale(1.05);
             transition: 0.5s ease-in-out;
             filter: grayscale(50%);
             will-change: scale;
-
-            
-
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }
     }
     &__content {
@@ -99,7 +100,7 @@
             &__visual {
                 width: calc(32% - #{$spacer-xl});
                 margin: 0 $spacer-xl 0 0;
-
+                height: 250px;
             }
             &__content {
                 width: 50%; 

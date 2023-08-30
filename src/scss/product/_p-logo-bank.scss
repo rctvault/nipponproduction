@@ -1,0 +1,16 @@
+.p-logo-bank {
+    padding: $spacer-sm 0;
+    .p-bank-slider {
+        height: 78px;
+    }
+    .slick-slide {
+        height: 78px;
+    }
+    img {
+        margin: $spacer-md $spacer-lg $spacer-md 0;
+        max-height: 30px;
+        object-fit: contain;
+        filter: grayscale(100%);
+        opacity: 0.5;
+    }
+}

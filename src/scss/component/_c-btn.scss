@@ -37,6 +37,7 @@
     &-black {
         background-color: $black;
         border-color: $black; 
+        color: $white;
         .arrow {
             fill:white;
         }
@@ -48,6 +49,7 @@
            .arrow {
             fill: $black;
            }
+           color: $black;
             span {
                 color: $black;
             }

@@ -1,18 +1,12 @@
 .c-clientlist {
     flex-wrap: wrap;
     li {
-        width: 50%;
-        @include media-breakpoint-up(lg){
-            width: 25%;
+        padding: $spacer-sm;
+        @include media-breakpoint-up(md){
+            padding: $spacer-md;
         }
-        a {
-            display: block;
-            @include media-breakpoint-down(lg){
-                opacity: 1;
-            img {
-                opacity: 1;
-            }
-            }
+        img {
+            max-height: 30px;
         }
     }
 }

@@ -1,46 +1,76 @@
 .c-team {
-    margin: $spacer-sm ;
-    width: 40%;
-    position: relative;
-    flex-shrink: 0;
+    padding: $spacer-sm ;
+    text-align: center;
+    justify-content: center;
+    flex-basis: 50%;
+    max-width: 50%;
     @include media-breakpoint-up(lg){
-        margin: $spacer-sm $spacer-md;
-        width: 25%; 
-        margin: $spacer-md $spacer-lg;
+         flex-basis: 20%;
+        max-width: 20%;
+        // flex-basis: 16.6666667%;
+        // max-width: 16.6666667%;
     }
-    button {
+    &__btn {
         all: unset;
+        position: absolute;
+        right: $spacer-xs;
+        bottom: $spacer-xs;
+        font-size: $fs9;
+        background-color: white;
+        padding: $spacer-xxs;
+        color: $black;
+        border-radius: $border-radius;
+        transition: all 0.3s ease-in-out;
         &:hover {
-            .c-team__img img {
-                transform: scale(1);
-            }
+           background-color: $black;
+           color: white;
         }
     }
     &__img {
-        border-radius: $border-radius;
-        overflow: hidden;
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0)
+        position: relative;
         img {
-            transform: scale(1.05);
-            will-change: transform;
-            transition: transform 0.5s ease-in-out;
+            border-radius: $border-radius;
+        }
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            border-radius: $border-radius;
+            height: 100%;
+            width: 100%;
+            border: 1px solid $red;
+            opacity: 0.2;
+            pointer-events: none;
+        }
+        &:after {
+            top: -6px;
+            left: -6px;
+        }
+        &:before {
+            bottom: -6px;
+            right: -6px;
+            z-index: -1;
             
         }
+        // img {
+        //     transform: scale(1.05);
+        //     will-change: transform;
+        //     transition: transform 0.5s ease-in-out;
+        // }
     }
     &__content {
+        margin-top: $spacer-xs;
+        .is-kana {
+            font-weight: normal;
+            display: block;
+            font-size: $font-size-7;
+        }
         p {
             font-size: $fs6;
             margin-bottom: 0;
             line-height: 1.5;
         }
     }
-    @include media-breakpoint-down(lg){
-    .c-team__sns {
-        display: none;
-    }
-}
+    
 
 }

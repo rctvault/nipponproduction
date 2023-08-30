@@ -7,9 +7,35 @@
         opacity: 0.6;
         text-transform: uppercase;
         font-family: $en-font;
-        margin-top: $spacer-md;
+        margin-top: $spacer-sm;
         font-size: $fs9;
         letter-spacing: 2px;
         margin-bottom: 0;
+    }
+    .c-sns {
+        margin-top: $spacer-lg;
+      justify-content: center;
+      li {
+        margin-bottom: 0;
+      }
+        .c-sns-icon-fill {
+            stroke: none;
+            &-fb {
+                fill: $white;
+              //  fill: #1877F2;
+            }
+            &-in {
+                fill: $white;
+              //  fill: #0A66C2;
+            }
+            &-line {
+                fill: $white;
+               // fill: #00C300;
+            }
+            &-tw {
+                fill: $white;
+              //  fill: #1DA1F2;
+            }
+        }
     }
 }

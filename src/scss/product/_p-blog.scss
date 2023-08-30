@@ -8,10 +8,10 @@
         gap: 0;
     }
     .c-blog {
-        margin-bottom: $spacer-md;
+        margin-bottom: $spacer-sm;
         @include media-breakpoint-up(lg){
         width: 28%;
-        margin-bottom: $spacer-xxl;
+        margin-bottom: $spacer-xl;
         }
     
     }

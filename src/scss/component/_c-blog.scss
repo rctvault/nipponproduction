@@ -1,6 +1,9 @@
 .c-blog {
     width: 45%;
     flex-shrink: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 4px 0px;
+    border-radius: $border-radius;
+    background-color: $white;
     @include media-breakpoint-up(lg){
         margin: 0 $spacer-md;
     }
@@ -8,10 +11,10 @@
         overflow: hidden;
         height: 120px;
         width: 100%;
-        border-radius: $border-radius;
+        border-radius: $border-radius $border-radius 0 0;
         -webkit-mask-image: -webkit-radial-gradient(white, black); 
         @include media-breakpoint-up(lg){
-            height: 200px;
+            height: 240px;
         }
         img {
            
@@ -25,6 +28,7 @@
         }
     }
     &__content {
+        padding:0  $spacer-sm  $spacer-md  $spacer-sm;
         &__title {
             line-height: 1.4;
              color: $black;
@@ -33,6 +37,7 @@
             transition: 0.5s ease-in-out;
         }
         &__details {
+            margin: 0 $spacer-sm;
             display: flex;
             justify-content: space-between;
             font-size: $fs9;

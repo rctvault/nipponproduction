@@ -8,6 +8,8 @@
     <meta name="robots" content="noindex">
 
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/country-select.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -102,7 +104,7 @@
             </div>
         </div>
         <div class="p-page-title__bg">
-            <img src="images/cover-network.png" alt="Network">
+            <img src="images/cover-network.webp" alt="Network">
         </div>
        
        </div>
@@ -136,7 +138,105 @@
                     <div class="col-12 col-md-7  mx-auto">
                        
                       <img class="img-fluid js-in" src="images/network_countries.webp" alt="Nippon Productions Network Map">
-                    <p class="mt-5 js-in">There should be an explanation on what each colour means. Plus 1-2 sentences below saying “get in touch even if you don’t see the country above as we may be able to help through our regional contacts”</p>
+                      <p class="mb-5">ニッポン・プロダクションでは、海外撮影のため、毎回現地のTV制作会社に撮影やコーディネートを依頼する必要はございません。世界中に幅広いネットワークを持った弊社なら、世界各国どこで撮影してもニッポン・プロダクションへの依頼のみで制作サポートが叶います。</p>
+
+
+                      <div class="c-content-right_">
+               
+                        <div class="c-countrypicker">
+                         <select id="dataAllCountries" class="mb-4 selectpicker position-relative countrypicker" data-live-search="true" onchange="CheckListed(this);"></select>
+                        </div>
+                    
+                    <!-- network coverage-->
+                     <!-- <label for="countryList" class="form-label">Search Our Network</label> -->
+                     <!-- <input class="c-select mb-4" list="dataListNetworkCountries" id="inputCountryList" placeholder="検索してください"   onchange="CheckListed(this.value);"> -->
+                     <datalist id="dataListNetworkCountries">
+                         <option data-url="iceland" data-group="yes" value="アイスランド">アイスランド</option>
+                         <option data-url="portugal" data-group="yes" value="ポルトガル">ポルトガル</option>
+                         <option data-url="italy" data-group="yes" value="イタリア">イタリア</option>
+                         <option data-url="croatia" data-group="yes" value="クロアチア">クロアチア</option>
+                         <option data-url="poland" data-group="yes" value="ポーランド">ポーランド</option>
+                         <option data-url="hungary" data-group="yes" value="ハンガリー">ハンガリー</option>
+                         <option data-url="romania" data-group="yes" value="ルーマニア">ルーマニア</option>
+                         <option data-url="ukraine" data-group="maybe" value="ウクライナ">ウクライナ</option>
+                         <option data-url="turkey"data-group="yes" value="トルコ">トルコ</option>
+                         <option data-url="georgia" data-group="yes" value="ジョージア">ジョージア</option>
+                     </datalist>
+                    
+                     <div class="c-networkcoverage-wrap">
+                         <div class="c-networkcoverage is-covered">
+                             <p class="mt-3">We are currently covering this territory.</p>
+                             <p class="text-center text-lg-start c-btn-set">
+                             <a id="learnMore" href="" class="c-btn b-btn-arrow mt-2">
+                                 <span>
+                                     詳しくはこちら 
+                                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.91 14.49"><path d="m7.77 6.28-.02-.02-.39-.37L1.13 0 .72.36C.06.95.04 1.92.68 2.52l5.06 4.8-5.23 4.64c-.66.59-.68 1.55-.04 2.16l.39.37 6.43-5.7L8.9 7.37 7.76 6.29Z"></path></svg>
+                                 </span>
+                             </a>
+                    
+                             <a href="contact.html" class="c-btn b-btn-arrow mt-2 c-btn-black">
+                                 <span>
+                                     お問い合わせ
+                                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.91 14.49"><path d="m7.77 6.28-.02-.02-.39-.37L1.13 0 .72.36C.06.95.04 1.92.68 2.52l5.06 4.8-5.23 4.64c-.66.59-.68 1.55-.04 2.16l.39.37 6.43-5.7L8.9 7.37 7.76 6.29Z"></path></svg>
+                                 </span>
+                             </a>
+                             </p>
+                         
+                    
+                         </div>
+                         <div class="c-networkcoverage is-not-covered">
+                             <p class="mt-3">
+                             We are not actively working in this territory, but drop us a line and we can try to help through our regional network.</p>
+                           
+                             <p class="mb-0 text-center text-lg-start ">
+                             <a href="contact.html" class="c-btn b-btn-arrow mt-2 c-btn-black">
+                                 <span>
+                                     お問い合わせ
+                                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.91 14.49"><path d="m7.77 6.28-.02-.02-.39-.37L1.13 0 .72.36C.06.95.04 1.92.68 2.52l5.06 4.8-5.23 4.64c-.66.59-.68 1.55-.04 2.16l.39.37 6.43-5.7L8.9 7.37 7.76 6.29Z"></path></svg>
+                                 </span>
+                             </a>
+                             </p>
+                         </div>
+                         <div class="c-networkcoverage is-perhaps-covered">
+                            <p class="mt-3">
+                           Maybe</p>
+                           
+                            <p class="mb-0 text-center text-lg-start ">
+                            <a href="contact.html" class="c-btn b-btn-arrow mt-2 c-btn-black">
+                                <span>
+                                    お問い合わせ
+                                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.91 14.49"><path d="m7.77 6.28-.02-.02-.39-.37L1.13 0 .72.36C.06.95.04 1.92.68 2.52l5.06 4.8-5.23 4.64c-.66.59-.68 1.55-.04 2.16l.39.37 6.43-5.7L8.9 7.37 7.76 6.29Z"></path></svg>
+                                </span>
+                            </a>
+                            </p>
+                        </div>
+                        
+                     </div>
+                    
+                    <!-- network coverage -->
+                    
+                     <div class="js-networktext">
+                        <!-- <p>ニッポン・プロダクションでは、海外撮影のため、毎回現地のTV制作会社に撮影やコーディネートを依頼する必要はございません。世界中に幅広いネットワークを持った弊社なら、世界各国どこで撮影してもニッポン・プロダクションへの依頼のみで制作サポートが叶います。</p> -->
+                    
+                        <!-- <p class="mb-0 text-center text-lg-start ">
+                            <a href="network.html" class="c-btn b-btn-arrow ">
+                                <span>
+                                    ネットワーク一覧
+                                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.91 14.49"><path d="m7.77 6.28-.02-.02-.39-.37L1.13 0 .72.36C.06.95.04 1.92.68 2.52l5.06 4.8-5.23 4.64c-.66.59-.68 1.55-.04 2.16l.39.37 6.43-5.7L8.9 7.37 7.76 6.29Z" /></svg>
+                                </span>
+                            </a>
+                        </p>  -->
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+<!-- 
+                    <p class="mt-5 js-in">There should be an explanation on what each colour means. Plus 1-2 sentences below saying “get in touch even if you don’t see the country above as we may be able to help through our regional contacts”</p> -->
                
 
                     </div>
@@ -155,7 +255,7 @@
                             <a href="network-single.html">
                             <div class="c-network__img">
                                 <div class="c-network__img__src">
-                                <img class="img-fluid" src="images/network-iceland.png" alt="Nippon Production Network Iceland">
+                                <img class="img-fluid" src="images/network-iceland.webp" alt="Nippon Production Network Iceland">
                                 </div>
                             </div>
                             <div class="c-network__content">
@@ -168,7 +268,7 @@
                             <a href="">
                             <div class="c-network__img">
                                 <div class="c-network__img__src">
-                                <img class="img-fluid" src="images/network-portugal.png" alt="Nippon Production Network Portugal">
+                                <img class="img-fluid" src="images/network-portugal.webp" alt="Nippon Production Network Portugal">
                                 </div>
                             </div>
                             <div class="c-network__content">
@@ -181,7 +281,7 @@
                             <a href="">
                             <div class="c-network__img">
                                 <div class="c-network__img__src">
-                                <img class="img-fluid" src="images/network-italy.png" alt="Nippon Production Network Italy">
+                                <img class="img-fluid" src="images/network-italy.webp" alt="Nippon Production Network Italy">
                                 </div>
                             </div>
                             <div class="c-network__content">
@@ -194,7 +294,7 @@
                             <a href="">
                             <div class="c-network__img">
                                 <div class="c-network__img__src">
-                                    <img class="img-fluid" src="images/network-croatia.png" alt="Nippon Production Network Croatia">
+                                    <img class="img-fluid" src="images/network-croatia.webp" alt="Nippon Production Network Croatia">
                                 </div>
                             </div>
                             <div class="c-network__content">
@@ -207,7 +307,7 @@
                             <a href="">
                             <div class="c-network__img">
                                 <div class="c-network__img__src">
-                                <img class="img-fluid" src="images/network-poland.png" alt="Nippon Production Network Poland">
+                                <img class="img-fluid" src="images/network-poland.webp" alt="Nippon Production Network Poland">
                                 </div>
                             </div>
                             <div class="c-network__content">
@@ -221,7 +321,7 @@
                             <a href="">
                             <div class="c-network__img">
                                 <div class="c-network__img__src">
-                                <img class="img-fluid" src="images/network-hungary.png" alt="Nippon Production Network Hungary">
+                                <img class="img-fluid" src="images/network-hungary.webp" alt="Nippon Production Network Hungary">
                                 </div>
                             </div>
                             <div class="c-network__content">
@@ -235,7 +335,7 @@
                             <a href="">
                             <div class="c-network__img">
                                 <div class="c-network__img__src">
-                                <img class="img-fluid" src="images/network-romania.png" alt="Nippon Production Network Romania">
+                                <img class="img-fluid" src="images/network-romania.webp" alt="Nippon Production Network Romania">
                                 </div>
                             </div>
                             <div class="c-network__content">
@@ -249,7 +349,7 @@
                             <a href="">
                             <div class="c-network__img">
                                 <div class="c-network__img__src">
-                                <img class="img-fluid" src="images/network-ukraine.png" alt="Nippon Production Network Ukraine">
+                                <img class="img-fluid" src="images/network-ukraine.webp" alt="Nippon Production Network Ukraine">
                                 </div>
                             </div>
                             <div class="c-network__content">
@@ -263,7 +363,7 @@
                             <a href="">
                             <div class="c-network__img">
                                 <div class="c-network__img__src">
-                                <img class="img-fluid" src="images/network-turkey.png" alt="Nippon Production Network Turkey">
+                                <img class="img-fluid" src="images/network-turkey.webp" alt="Nippon Production Network Turkey">
                                 </div>
                             </div>
                             <div class="c-network__content">
@@ -276,7 +376,7 @@
                             <a href="">
                             <div class="c-network__img">
                                 <div class="c-network__img__src">
-                                <img class="img-fluid" src="images/network-georgia.png" alt="Nippon Production Network Georgia">
+                                <img class="img-fluid" src="images/network-georgia.webp" alt="Nippon Production Network Georgia">
                                 </div>
                             </div>
                             <div class="c-network__content">
@@ -436,5 +536,8 @@
    
 </body>
 <script src="js/vendor.js"></script>
+
+<script src="js/country-select.js"></script>
+
 <script src="js/scripts.min.js"></script>
 </html>

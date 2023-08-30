@@ -1,12 +1,11 @@
 .c-nav {
-    // padding-top: $spacer-sm;
-    // padding-bottom: $spacer-sm;
     transition: all 0.3s ease-in-out;
     padding: 0;
     font-family: $en-font;
     font-weight: $en-font-med;
     border-top: 2px solid $red;
-
+   
+  
      .navbar-toggler {
       box-shadow: none;
      }
@@ -15,13 +14,21 @@
       }
       li+li {
         @include media-breakpoint-up(lg) {
-        margin-left: $spacer-md;
+        margin-left: $spacer-xs;
         }
       }
       .nav-link {
-        font-size: $fs7;
+       
+        
         transition: all 0.3s ease-in-out;
         color: $white;
+        @include media-breakpoint-up(lg) {
+          font-size: 84%;
+        }
+        
+        @include media-breakpoint-up(xl) {
+          font-size: 100%;
+        }
         @include media-breakpoint-down(lg) {
           font-size: $fs4;
           padding: $spacer-xs 0;
@@ -31,28 +38,31 @@
         }
         
       }
-      .btn {
-        background-color: $red;
-        display: inline-block;
-        color: $white;
-        border-radius: 0;
-        transition :$transition;
-        font-weight: $en-font-med;
-        padding: $spacer-xs $spacer-lg;
-        font-size: $fs4;
-        margin-top: $spacer-md;
-        @include media-breakpoint-up(lg) {
-          margin: 0;
-         font-size: $fs7;
-         padding: $spacer-md;
-       
-        }
-        &:hover {
-          background-color: $black;
-          color: $red;
-          border-color: $black;
-        }
+      .nav-item:last-child {
+        a {
+          background-color: $red;
+          display: inline-block;
+          color: $white;
+          border-radius: 0;
+          transition :$transition;
+          font-weight: $en-font-med;
+          padding: $spacer-xs $spacer-lg;
+          font-size: $fs4;
+          margin-top: $spacer-md;
+          @include media-breakpoint-up(lg) {
+            margin: 0;
+           font-size: $fs7;
+           padding: $spacer-md ;
+         
+          }
+          &:hover {
+            background-color: $black;
+            color: $red;
+            border-color: $black;
+          }
+        } 
       }
+      
 
       &.scrolled,
       &.is-scrolled {
@@ -69,11 +79,21 @@
           color: $red;
         }
       }
+      .lang-switcher  a {
+        background-color:transparent;
+        color: $black;
+        border-color: $black;
+        &:hover {
+          background-color: $black;
+          color: $white;
+        }
+      }
       }
 }
 
 .navigation {
   opacity: 0;
+  visibility: hidden;
   transform: translateY(-100%);
 }
 .scrolled,
@@ -133,4 +153,28 @@
   &:before {
     top: 8px;
   }
+}
+
+.lang-switcher {
+  
+  
+    .nav-link {
+      font-size: $fs9;
+      margin: 0;
+      margin-right: $spacer-xs;
+      color: white;
+      border: 1px solid $white;
+   text-decoration: none;
+      padding: 4px $spacer-xs;
+      color: white;
+      text-decoration: none;
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+
+  
 }

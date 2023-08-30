@@ -41,7 +41,7 @@
           overflow: hidden;
           height: 60vh;
           @include media-breakpoint-up(lg){
-            height: auto;
+            height: 55vh;
           }
             img {
                 object-fit: cover;
