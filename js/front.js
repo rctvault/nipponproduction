@@ -101,8 +101,8 @@ function projectSlider(){
   }
 
 $(document).ready(function(){
-  initKv();
+  //initKv();
     logoSlider();
     projectSlider();
     voiceSlider();
-    });
+});

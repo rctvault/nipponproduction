@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- remove this on production -->
     <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/country-select.css">
@@ -123,24 +126,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <p class="p-kv__lead is-i">
+                        <p class="p-kv__lead">
                             ニッポン・プロダクションは<span class="is-red">「想い」</span><br class="d-none d-xl-block"/>を<span class="is-red">実現する</span>日本特化の海外ロケ・</span><br class="d-none d-xl-block"/>撮影コーディネーターです    
                         </p>
                     </div>
                 </div>
             </div>
             <div class="p-kv__img">
-                <picture>
-                    <!-- show this up to sm -->
-                    <source media="(max-width: 596px)" srcset=images/kv_mb.webp>
-                    <!-- else show this up to md -->
-                   
-                    <img src="images/kv_1.webp" alt="Nippon Productions">
-                  </picture>
+
+                <img
+  srcset="images/kv_mb.webp 480w, images/kv_1.webp 800w"
+  sizes="(max-width: 600px) 480px,
+         800px"
+  src="images/kv_1.webp"
+  alt="Nippon Production" />
+               
               
             </div>
         </div>
-        <div class="p-logo-bank is-i">
+        <div class="p-logo-bank">
             <div class="p-bank-slider">
                 <div><img class="img-fluid" src="images/logos/logo_5news.webp" alt="5news"></div>
                 <div><img class="img-fluid" src="images/logos/logo_bbc.webp" alt="bbc"></div>

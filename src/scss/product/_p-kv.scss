@@ -19,7 +19,6 @@
         line-height: 1.6;
         z-index: 10;
        margin-bottom: 0;
-       opacity: 0;
        will-change: opacity;
        &-en {
         font-size: clamp(1.75rem, 0.25rem + 4vw, 3rem);

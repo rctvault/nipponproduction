@@ -68,13 +68,13 @@
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html">About Us</a>
+                    <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="support.html">Services</a>
+                    <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="works.html">Why Choose Us</a>
+                    <a class="nav-link" href="#why">Why Choose Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">How we work</a>
@@ -1083,6 +1083,7 @@ function mbNavOnePager(){
 
     internalLinks.forEach(internalLink => {
         internalLink.addEventListener('click', function() {
+       
             // code to run when button is clicked
             navBarBtn.classList.toggle('is-active'); 
             mbNav.classList.toggle('is-active');
@@ -1093,14 +1094,34 @@ function mbNavOnePager(){
    
 }
 
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+ 
+    mbNavOnePager();
+
+  } else {
+
+  }
+}
+
+// Create a MediaQueryList object
+var x = window.matchMedia("(max-width: 700px)")
+
+// Call listener function at run time
+myFunction(x);
+
+// Attach listener function on state changes
+x.addEventListener("change", function() {
+  myFunction(x);
+});
+
 
 
 
 $(document).ready(function() {
     initKv(), 
     logoSlider(),  
-    voiceSlider(),
-    mbNavOnePager()
+    voiceSlider()
 });
 </script>
 
