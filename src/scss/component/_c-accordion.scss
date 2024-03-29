@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+.c-accordtion__title {
+    font-size: $fs5;
+    margin: $spacer-sm 0;
+}
+
+.c-accordion + .c-accordtion__title {
+    margin-top: $spacer-dl;
+}
+.c-accordion {
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+ 
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: $spacer-md $spacer-sm;
+    font-size: clamp(1.25rem, 1.025rem + 0.6vw, 1.4375rem);
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    gap: $spacer-md;
+    align-items: center;
+    justify-content: space-between;
+ span {
+    display: flex;
+ }
+    &:hover, &:focus {
+      cursor: pointer;
+      color: $red;
+      &::after {
+        cursor: pointer;
+        color: $red;
+     
+      }
+    }
+    // .accordion-title {
+    //   padding: $spacer-sm $spacer-sm $spacer-sm 0;
+    // }
+    .icon {
+     flex-shrink: 0;
+        display: flex;
+        position: relative;
+    //   display: inline-block;
+    //   position: absolute;
+    //   top: 18px;
+    //   right: 0;
+    //   width: 22px;
+    //   height: 22px;
+    height: 32px;
+    width: 32px;
+   
+   
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 14px;
+        left: 5px;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 14px;
+        width: 2px;
+        height: 20px;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+    color: $red;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 100em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+      padding: 0 $spacer-sm $spacer-md $spacer-sm;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    padding: 0  $spacer-sm;
+    p {
+     opacity: 0.8;
+    }
+  }
+}
