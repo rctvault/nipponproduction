@@ -90,7 +90,8 @@
       max-height: 100em;
       transition: all 200ms linear;
       will-change: opacity, max-height;
-      padding: 0 $spacer-sm $spacer-md $spacer-sm;
+      // padding: 0 $spacer-sm $spacer-md $spacer-sm;
+      padding: 0  $spacer-sm;
     }
   }
   .accordion-content {
@@ -102,6 +103,9 @@
     padding: 0  $spacer-sm;
     p {
      opacity: 0.8;
+    }
+    p:last-child {
+      padding-bottom: $spacer-sm;
     }
   }
 }
